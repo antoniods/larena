@@ -97,9 +97,9 @@ const Navbar = props => {
                   >
                     <i className="bx bx-home-circle me-2"></i>
                     {props.t("Dashboard")} {props.menuOpen}
-                    <div className="arrow-down"></div>
+                    {/* <div className="arrow-down"></div> */}
                   </Link>
-                  <div
+                  {/* <div
                     className={classname("dropdown-menu", { show: dashboard })}
                   >
                     <Link to="/dashboard" className="dropdown-item">
@@ -114,7 +114,7 @@ const Navbar = props => {
                     <Link to="#" className="dropdown-item">
                       {props.t("Blog")}
                     </Link>
-                  </div>
+                  </div> */}
                 </li>
 
                 <li className="nav-item dropdown">
@@ -172,10 +172,7 @@ const Navbar = props => {
                           <Link to="#" className="dropdown-item">
                             {props.t("Range Slider")}
                           </Link>
-                          <Link
-                            to="#"
-                            className="dropdown-item"
-                          >
+                          <Link to="#" className="dropdown-item">
                             {props.t("Session Timeout")}
                           </Link>
                           <Link to="#" className="dropdown-item">
@@ -184,10 +181,7 @@ const Navbar = props => {
                           <Link to="#" className="dropdown-item">
                             {props.t("Sweet-Alert")}
                           </Link>
-                          <Link
-                            to="#"
-                            className="dropdown-item"
-                          >
+                          <Link to="#" className="dropdown-item">
                             {props.t("Tabs & Accordions")}
                           </Link>
                           <Link to="#" className="dropdown-item">
@@ -283,22 +277,13 @@ const Navbar = props => {
                               show: email,
                             })}
                           >
-                            <Link
-                              to="#"
-                              className="dropdown-item"
-                            >
+                            <Link to="#" className="dropdown-item">
                               {props.t("Basic Action")}
                             </Link>
-                            <Link
-                              to="#"
-                              className="dropdown-item"
-                            >
+                            <Link to="#" className="dropdown-item">
                               {props.t("Alert Email")}
                             </Link>
-                            <Link
-                              to="#"
-                              className="dropdown-item"
-                            >
+                            <Link to="#" className="dropdown-item">
                               {props.t("Billing Email")}
                             </Link>
                           </div>
@@ -325,19 +310,13 @@ const Navbar = props => {
                         <Link to="#" className="dropdown-item">
                           {props.t("Products")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Product Detail")}
                         </Link>
                         <Link to="#" className="dropdown-item">
                           {props.t("Orders")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Customers")}
                         </Link>
                         <Link to="#" className="dropdown-item">
@@ -349,10 +328,7 @@ const Navbar = props => {
                         <Link to="#" className="dropdown-item">
                           {props.t("Shops")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Add Product")}
                         </Link>
                       </div>
@@ -387,10 +363,7 @@ const Navbar = props => {
                         <Link to="#" className="dropdown-item">
                           {props.t("Orders")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("KYC Application")}
                         </Link>
                         <Link to="#" className="dropdown-item">
@@ -664,10 +637,7 @@ const Navbar = props => {
                         <Link to="#" className="dropdown-item">
                           {props.t("Boxicons")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Material Design")}
                         </Link>
                         <Link to="#" className="dropdown-item">
@@ -786,34 +756,19 @@ const Navbar = props => {
                         <Link to="#-mail" className="dropdown-item">
                           {props.t("Confirm Mail")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Confirm Mail 2")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Email verification")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Email verification 2")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Two step verification")}
                         </Link>
-                        <Link
-                          to="#"
-                          className="dropdown-item"
-                        >
+                        <Link to="#" className="dropdown-item">
                           {props.t("Two step verification 2")}
                         </Link>
                       </div>
