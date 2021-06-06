@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import React, {useEffect} from "react"
+import PropTypes from "prop-types"
+import React, { useEffect } from "react"
 
 import { Switch, BrowserRouter as Router } from "react-router-dom"
 import { connect } from "react-redux"
@@ -26,6 +26,7 @@ import fakeBackend from "./helpers/AuthType/fakeBackend"
 // Activating fake backend
 fakeBackend()
 
+// à remplir avec les parametres firebase
 // const firebaseConfig = {
 //   apiKey: process.env.REACT_APP_APIKEY,
 //   authDomain: process.env.REACT_APP_AUTHDOMAIN,
@@ -41,7 +42,6 @@ fakeBackend()
 // initFirebaseBackend(firebaseConfig)
 
 const App = props => {
-
   function getLayout() {
     let layoutCls = VerticalLayout
     switch (props.layout.layoutType) {
@@ -88,7 +88,7 @@ const App = props => {
 }
 
 App.propTypes = {
-  layout: PropTypes.any
+  layout: PropTypes.any,
 }
 
 const mapStateToProps = state => {
