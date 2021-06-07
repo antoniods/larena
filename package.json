@@ -1,7 +1,7 @@
 {
   "name": "arena",
   "version": "0.1.0",
-  "homepage": "https://antoniods.github.io/larena/",
+  "homepage": "https://antoniods.github.io/larena",
   "private": true,
   "dependencies": {
     "@fullcalendar/bootstrap": "^5.5.0",
