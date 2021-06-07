@@ -21,7 +21,7 @@ const userRoutes = [
 
   // this route should be at the end of all other routes
   {
-    path: "/larena",
+    path: "/larena/",
     exact: true,
     component: () => <Redirect to="/dashboard" />,
   },
