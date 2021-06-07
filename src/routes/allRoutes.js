@@ -10,7 +10,7 @@ import Logout from "../pages/Authentication/Logout"
 import Register from "../pages/Authentication/Register"
 import ForgetPwd from "../pages/Authentication/ForgetPassword"
 
-// Dashboard
+// Dashboard - Crypto Wallet
 import Dashboard from "../pages/Dashboard/index"
 
 const userRoutes = [
