@@ -22,6 +22,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
             <i className="mdi mdi-account-circle text-primary h1" />
           </div>
 
+          {/* Here we show some informations from the wallet : Name, Email and Public Key */}
           <Media body>
             <div className="text-muted">
               <h5>{wallet.userName}</h5>
@@ -55,6 +56,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
               <p className="text-muted mb-2">Since last month</p>
               <h5>
                 {wallet.lastMonthDifference}
+                {/* badge pourcentage, ajouter le badge rouge (add red badge) */}
                 <span className="badge bg-success ms-2 align-bottom">
                   {wallet.lastMonthDifferencePercent}
                 </span>
