@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import MetaTags from 'react-meta-tags';
+import PropTypes from "prop-types"
+import MetaTags from "react-meta-tags"
 import React from "react"
 
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
@@ -68,9 +68,9 @@ const Login = props => {
 
   return (
     <React.Fragment>
-     <MetaTags>
-          <title>Login | Skote - React Admin & Dashboard Template</title>
-        </MetaTags>
+      <MetaTags>
+        <title>Login | Enter the Arena</title>
+      </MetaTags>
       <div className="home-btn d-none d-sm-block">
         <Link to="/" className="text-dark">
           <i className="fas fa-home h2" />
@@ -86,7 +86,7 @@ const Login = props => {
                     <Col xs={7}>
                       <div className="text-primary p-4">
                         <h5 className="text-primary">Welcome Back !</h5>
-                        <p>Sign in to continue to Skote.</p>
+                        <p>Sign in to continue to Arena.</p>
                       </div>
                     </Col>
                     <Col className="col-5 align-self-end">
@@ -153,7 +153,7 @@ const Login = props => {
                           className="form-check-label"
                           htmlFor="customControlInline"
                         >
-                          Remember me
+                          Remember meee
                         </label>
                       </div>
 
@@ -177,7 +177,7 @@ const Login = props => {
                               callback={facebookResponse}
                               render={renderProps => (
                                 <Link
-                                to="#"
+                                  to="#"
                                   className="social-list-item bg-primary text-white border-primary"
                                   onClick={renderProps.onClick}
                                 >
@@ -212,7 +212,7 @@ const Login = props => {
                               clientId={google.CLIENT_ID}
                               render={renderProps => (
                                 <Link
-                                to="#"
+                                  to="#"
                                   className="social-list-item bg-danger text-white border-danger"
                                   onClick={renderProps.onClick}
                                 >
@@ -239,10 +239,7 @@ const Login = props => {
               <div className="mt-5 text-center">
                 <p>
                   Don&#39;t have an account ?{" "}
-                  <Link
-                    to="register"
-                    className="fw-medium text-primary"
-                  >
+                  <Link to="register" className="fw-medium text-primary">
                     {" "}
                     Signup now{" "}
                   </Link>{" "}
@@ -273,5 +270,5 @@ Login.propTypes = {
   error: PropTypes.any,
   history: PropTypes.object,
   loginUser: PropTypes.func,
-  socialLogin: PropTypes.func
+  socialLogin: PropTypes.func,
 }

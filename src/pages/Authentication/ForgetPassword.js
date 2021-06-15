@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import MetaTags from 'react-meta-tags';
+import PropTypes from "prop-types"
+import MetaTags from "react-meta-tags"
 import React from "react"
 import { Row, Col, Alert, Card, CardBody, Container } from "reactstrap"
 
@@ -25,7 +25,7 @@ const ForgetPasswordPage = props => {
   return (
     <React.Fragment>
       <MetaTags>
-        <title>Forget Password | Skote - React Admin & Dashboard Template</title>
+        <title>Forget Password | Enter the Arena</title>
       </MetaTags>
       <div className="home-btn d-none d-sm-block">
         <Link to="/" className="text-dark">
@@ -129,7 +129,7 @@ ForgetPasswordPage.propTypes = {
   forgetError: PropTypes.any,
   forgetSuccessMsg: PropTypes.any,
   history: PropTypes.object,
-  userForgetPassword: PropTypes.func
+  userForgetPassword: PropTypes.func,
 }
 
 const mapStatetoProps = state => {

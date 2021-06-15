@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import MetaTags from 'react-meta-tags';
+import PropTypes from "prop-types"
+import MetaTags from "react-meta-tags"
 import React, { useState, useEffect } from "react"
 import {
   Container,
@@ -47,8 +47,8 @@ const UserProfile = props => {
         setidx(obj.uid)
       }
       setTimeout(() => {
-        props.resetProfileFlag();
-      }, 3000);
+        props.resetProfileFlag()
+      }, 3000)
     }
   }, [props.success])
 
@@ -60,18 +60,18 @@ const UserProfile = props => {
     <React.Fragment>
       <div className="page-content">
         <MetaTags>
-          <title>Profile | Skote - React Admin & Dashboard Template</title>
+          <title>Profile | Enter the Arena</title>
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumb */}
-          <Breadcrumb title="Skote" breadcrumbItem="Profile" />
+          <Breadcrumb title="Arena" breadcrumbItem="Profile" />
 
           <Row>
             <Col lg="12">
               {props.error && props.error ? (
                 <Alert color="danger">{props.error}</Alert>
               ) : null}
-              {props.success? (
+              {props.success ? (
                 <Alert color="success">{props.success}</Alert>
               ) : null}
 
@@ -137,7 +137,7 @@ const UserProfile = props => {
 UserProfile.propTypes = {
   editProfile: PropTypes.func,
   error: PropTypes.any,
-  success: PropTypes.any
+  success: PropTypes.any,
 }
 
 const mapStatetoProps = state => {

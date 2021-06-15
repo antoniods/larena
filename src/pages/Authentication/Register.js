@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React, { useEffect } from "react"
-import MetaTags from 'react-meta-tags';
+import MetaTags from "react-meta-tags"
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
 
 // availity-reactstrap-validation
@@ -25,13 +25,13 @@ const Register = props => {
 
   useEffect(() => {
     props.apiError("")
-  }, []);
+  }, [])
 
   return (
     <React.Fragment>
-     <MetaTags>
-          <title>Register | Skote - React Admin & Dashboard Template</title>
-        </MetaTags>
+      <MetaTags>
+        <title>Register | Enter the Arena</title>
+      </MetaTags>
       <div className="home-btn d-none d-sm-block">
         <Link to="/" className="text-dark">
           <i className="fas fa-home h2" />
@@ -47,7 +47,7 @@ const Register = props => {
                     <Col className="col-7">
                       <div className="text-primary p-4">
                         <h5 className="text-primary">Free Register</h5>
-                        <p>Get your free Skote account now.</p>
+                        <p>Get your Arena account now.</p>
                       </div>
                     </Col>
                     <Col className="col-5 align-self-end">
@@ -82,12 +82,9 @@ const Register = props => {
                           Register User Successfully
                         </Alert>
                       ) : null}
-            
-                      {props.registrationError &&
-                      props.registrationError ? (
-                        <Alert color="danger">
-                          {props.registrationError}
-                        </Alert>
+
+                      {props.registrationError && props.registrationError ? (
+                        <Alert color="danger">{props.registrationError}</Alert>
                       ) : null}
 
                       <div className="mb-3">
@@ -132,7 +129,7 @@ const Register = props => {
 
                       <div className="mt-4 text-center">
                         <p className="mb-0">
-                          By registering you agree to the Skote{" "}
+                          By registering you agree to the Arena{" "}
                           <Link to="#" className="text-primary">
                             Terms of Use
                           </Link>
@@ -151,8 +148,8 @@ const Register = props => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © {new Date().getFullYear()} Skote. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © {new Date().getFullYear()} Arena. Crafted with{" "}
+                  <i className="mdi mdi-heart text-danger" /> by ToroChain
                 </p>
               </div>
             </Col>
