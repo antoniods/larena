@@ -119,13 +119,18 @@ class FirebaseAuthBackend {
   socialLoginUser = (data, type) => {
     let credential = {}
     if (type === "google") {
-      credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.token)
+      credential = firebase.auth.GoogleAuthProvider.credential(
+        data.idToken,
+        data.token
+      )
     } else if (type === "facebook") {
       credential = firebase.auth.FacebookAuthProvider.credential(data.token)
     }
     return new Promise((resolve, reject) => {
       if (!!credential) {
-        firebase.auth().signInWithCredential(credential)
+        firebase
+          .auth()
+          .signInWithCredential(credential)
           .then(user => {
             resolve(this.addNewUserToFirestore(user))
           })
@@ -138,7 +143,7 @@ class FirebaseAuthBackend {
     })
   }
 
-  addNewUserToFirestore = (user) => {
+  addNewUserToFirestore = user => {
     const collection = firebase.firestore().collection("users")
     const { profile } = user.additionalUserInfo
     const details = {
@@ -148,7 +153,7 @@ class FirebaseAuthBackend {
       email: profile.email,
       picture: profile.picture,
       createdDtm: firebase.firestore.FieldValue.serverTimestamp(),
-      lastLoginTime: firebase.firestore.FieldValue.serverTimestamp()
+      lastLoginTime: firebase.firestore.FieldValue.serverTimestamp(),
     }
     collection.doc(firebase.auth().currentUser.uid).set(details)
     return { user, details }
