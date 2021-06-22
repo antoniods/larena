@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import PropTypes from 'prop-types'
-import ReactDrawer from 'react-drawer';
-import 'react-drawer/lib/react-drawer.css';
+import PropTypes from "prop-types"
+import ReactDrawer from "react-drawer"
+import "react-drawer/lib/react-drawer.css"
 
 import { connect } from "react-redux"
 
@@ -14,11 +14,11 @@ import { Row, Col, Dropdown, DropdownToggle, DropdownMenu } from "reactstrap"
 
 // Import menuDropdown
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown"
-import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown"
+// import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown"
 import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu"
 import RightSidebar from "../CommonForBoth/RightSidebar"
 
-import megamenuImg from "../../assets/images/megamenu-img.png"
+// import megamenuImg from "../../assets/images/megamenu-img.png"
 import logo from "../../assets/images/logo.svg"
 import logoLight from "../../assets/images/logo-light.png"
 import logoLightSvg from "../../assets/images/logo-light.svg"
@@ -39,16 +39,16 @@ const Header = props => {
   const [menu, setMenu] = useState(false)
   const [isSearch, setSearch] = useState(false)
   const [socialDrp, setsocialDrp] = useState(false)
-  const [position, setPosition] = useState();
-  const [open, setOpen] = useState(false);
+  const [position, setPosition] = useState()
+  const [open, setOpen] = useState(false)
 
   const toggleTopDrawer = () => {
-    setPosition('right');
+    setPosition("right")
     setOpen(!open)
   }
 
   const onDrawerClose = () => {
-    setOpen(false);
+    setOpen(false)
   }
 
   function toggleFullscreen() {
@@ -94,10 +94,10 @@ const Header = props => {
 
               <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logoLightSvg} alt="" height="22" />
+                  <img src={logoLightSvg} alt="" height="20" />
                 </span>
                 <span className="logo-lg">
-                  <img src={logoLight} alt="" height="19" />
+                  <img src={logoLight} alt="" height="35" />
                 </span>
               </Link>
             </div>
@@ -125,16 +125,12 @@ const Header = props => {
               </div>
             </form>
 
-            <Dropdown
+            {/* <Dropdown
               className="dropdown-mega d-none d-lg-block ms-2"
               isOpen={menu}
               toggle={() => setMenu(!menu)}
             >
-              <DropdownToggle
-                className="btn header-item "
-                caret
-                tag="button"
-              >
+              <DropdownToggle className="btn header-item " caret tag="button">
                 {props.t("Mega Menu")} <i className="mdi mdi-chevron-down" />
               </DropdownToggle>
               <DropdownMenu className="dropdown-megamenu">
@@ -270,7 +266,7 @@ const Header = props => {
                   </Col>
                 </Row>
               </DropdownMenu>
-            </Dropdown>
+            </Dropdown> */}
           </div>
 
           <div className="d-flex">
@@ -386,27 +382,24 @@ const Header = props => {
               </button>
             </div>
 
-            <NotificationDropdown />
+            {/* <NotificationDropdown /> */}
 
             <ProfileMenu />
 
-            <div className="dropdown d-inline-block">
+            {/* <div className="dropdown d-inline-block">
               <button
-                onClick={toggleTopDrawer} disabled={open}
+                onClick={toggleTopDrawer}
+                disabled={open}
                 type="button"
                 className="btn header-item noti-icon right-bar-toggle "
               >
                 <i className="bx bx-cog bx-spin" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
-      <ReactDrawer
-        open={open}
-        position={position}
-        onClose={onDrawerClose}
-      >
+      <ReactDrawer open={open} position={position} onClose={onDrawerClose}>
         <RightSidebar onClose={onDrawerClose} />
       </ReactDrawer>
     </React.Fragment>
@@ -418,7 +411,7 @@ Header.propTypes = {
   showRightSidebar: PropTypes.any,
   showRightSidebarAction: PropTypes.func,
   t: PropTypes.any,
-  toggleLeftmenu: PropTypes.func
+  toggleLeftmenu: PropTypes.func,
 }
 
 const mapStatetoProps = state => {

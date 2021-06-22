@@ -11,6 +11,7 @@ import { connect } from "react-redux"
 
 const Navbar = props => {
   const [dashboard, setdashboard] = useState(false)
+  const [wallet, setwallet] = useState(false)
   const [ui, setui] = useState(false)
   const [app, setapp] = useState(false)
   const [email, setemail] = useState(false)
@@ -87,6 +88,7 @@ const Navbar = props => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
+                  {/* DASHBOARD */}
                   <Link
                     className="nav-link dropdown-toggle arrow-none"
                     onClick={e => {
@@ -99,7 +101,39 @@ const Navbar = props => {
                     {props.t("Dashboard")} {props.menuOpen}
                     {/* <div className="arrow-down"></div> */}
                   </Link>
-                  {/* <div
+                </li>
+                {/* WALLET */}
+                <li className="nav-item dropdown">
+                  <Link
+                    to="/wallet"
+                    onClick={e => {
+                      e.preventDefault()
+                      setwallet(!wallet)
+                    }}
+                    className="nav-link dropdown-togglez arrow-none"
+                  >
+                    <i className="bx bx-collection me-2"></i>
+                    {props.t("Wallet")}
+                  </Link>
+                </li>
+                {/* EXCHANGE */}
+                <li className="nav-item dropdown">
+                  <Link
+                    to="/exchange"
+                    onClick={e => {
+                      e.preventDefault()
+                      setexchange(!exchange)
+                    }}
+                    className="nav-link dropdown-togglez arrow-none"
+                  >
+                    <i className="bx bx-customize me-2"></i>
+                    {props.t("Exchange")}
+                  </Link>
+                </li>
+
+                {/* PRIMO MENU */}
+
+                {/* <div
                     className={classname("dropdown-menu", { show: dashboard })}
                   >
                     <Link to="/dashboard" className="dropdown-item">
@@ -114,10 +148,10 @@ const Navbar = props => {
                     <Link to="#" className="dropdown-item">
                       {props.t("Blog")}
                     </Link>
-                  </div> */}
-                </li>
+                  </div> 
+                </li>*/}
 
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <Link
                     to="/#"
                     onClick={e => {
@@ -216,9 +250,11 @@ const Navbar = props => {
                       </Col>
                     </Row>
                   </div>
-                </li>
+                </li> */}
 
-                <li className="nav-item dropdown">
+                {/* SECONDO MENU */}
+
+                {/* <li className="nav-item dropdown">
                   <Link
                     to="/#"
                     onClick={e => {
@@ -482,9 +518,11 @@ const Navbar = props => {
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> */}
 
-                <li className="nav-item dropdown">
+                {/* TERZO MENU */}
+
+                {/* <li className="nav-item dropdown">
                   <Link
                     to="/#"
                     className="nav-link dropdown-toggle arrow-none"
@@ -674,9 +712,11 @@ const Navbar = props => {
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> */}
 
-                <li className="nav-item dropdown">
+                {/* Quarto MENU */}
+
+                {/* <li className="nav-item dropdown">
                   <Link
                     className="nav-link dropdown-toggle arrow-none"
                     to="/#"
@@ -817,7 +857,7 @@ const Navbar = props => {
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </Collapse>
           </nav>
