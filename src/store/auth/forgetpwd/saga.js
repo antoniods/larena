@@ -6,10 +6,11 @@ import { userForgetPasswordSuccess, userForgetPasswordError } from "./actions"
 
 //Include Both Helper File with needed methods
 import { getFirebaseBackend } from "../../../helpers/firebase_helper"
-import {
-  postFakeForgetPwd,
-  postJwtForgetPwd,
-} from "../../../helpers/fakebackend_helper"
+
+//import {
+//  postFakeForgetPwd,
+//  postJwtForgetPwd,
+// } from "../../../helpers/fakebackend_helper"
 
 const fireBaseBackend = getFirebaseBackend()
 
