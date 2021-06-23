@@ -94,7 +94,7 @@ class CryptoWallet extends Component {
           </MetaTags>
           <Container fluid>
             {/* Render Breadcrumb */}
-            <Breadcrumbs title="Crypto" breadcrumbItem="KYC Application" />
+            <Breadcrumbs title="Arena" breadcrumbItem="Wallet Login" />
 
             <Row className="justify-content-center mt-lg-5">
               <Col xl="5" sm="8">

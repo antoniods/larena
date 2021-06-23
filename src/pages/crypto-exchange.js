@@ -195,7 +195,7 @@ class CryptoExchange extends Component {
           </MetaTags>
           <Container fluid>
             {/* Render Breadcrumb */}
-            <Breadcrumbs title="Crypto" breadcrumbItem="Exchange" />
+            <Breadcrumbs title="Arena" breadcrumbItem="Exchange" />
 
             <Row>
               <Col lg="12">

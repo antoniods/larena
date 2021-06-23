@@ -45,7 +45,7 @@ const CryptoWallet = props => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Crypto" breadcrumbItem="Wallet" />
+          <Breadcrumbs title="Arena" breadcrumbItem="Dashboard" />
           {!isEmpty(wallet) && (
             <Row>
               <Col xl="4">
