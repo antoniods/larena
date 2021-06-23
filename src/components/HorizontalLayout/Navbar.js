@@ -12,6 +12,7 @@ import { connect } from "react-redux"
 const Navbar = props => {
   const [dashboard, setdashboard] = useState(false)
   const [wallet, setwallet] = useState(false)
+  const [exchange, setexchange] = useState(false)
   const [ui, setui] = useState(false)
   const [app, setapp] = useState(false)
   const [email, setemail] = useState(false)
@@ -87,47 +88,48 @@ const Navbar = props => {
               id="topnav-menu-content"
             >
               <ul className="navbar-nav">
+                {/* DASHBOARD */}
                 <li className="nav-item dropdown">
-                  {/* DASHBOARD */}
                   <Link
                     className="nav-link dropdown-toggle arrow-none"
-                    onClick={e => {
-                      e.preventDefault()
-                      setdashboard(!dashboard)
-                    }}
                     to="/dashboard"
                   >
                     <i className="bx bx-home-circle me-2"></i>
-                    {props.t("Dashboard")} {props.menuOpen}
-                    {/* <div className="arrow-down"></div> */}
+                    {props.t("Dashboard")}
                   </Link>
                 </li>
                 {/* WALLET */}
                 <li className="nav-item dropdown">
                   <Link
-                    to="/wallet"
-                    onClick={e => {
-                      e.preventDefault()
-                      setwallet(!wallet)
-                    }}
                     className="nav-link dropdown-togglez arrow-none"
+                    to="/wallet-login"
                   >
                     <i className="bx bx-collection me-2"></i>
                     {props.t("Wallet")}
                   </Link>
                 </li>
+
                 {/* EXCHANGE */}
+
                 <li className="nav-item dropdown">
                   <Link
                     to="/exchange"
-                    onClick={e => {
-                      e.preventDefault()
-                      setexchange(!exchange)
-                    }}
                     className="nav-link dropdown-togglez arrow-none"
                   >
                     <i className="bx bx-customize me-2"></i>
                     {props.t("Exchange")}
+                  </Link>
+                </li>
+
+                {/* ORDERS */}
+
+                <li className="nav-item dropdown">
+                  <Link
+                    to="/orders"
+                    className="nav-link dropdown-togglez arrow-none"
+                  >
+                    <i className="bx bx-customize me-2"></i>
+                    {props.t("Orders")}
                   </Link>
                 </li>
 
