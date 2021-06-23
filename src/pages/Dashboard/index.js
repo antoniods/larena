@@ -67,7 +67,9 @@ const CryptoWallet = props => {
                             <i className="mdi mdi-bitcoin h2 text-warning mb-0" />
                           </div>
                           <Media body>
-                            <p className="text-muted mb-2">Bitcoin Wallet</p>
+                            <p className="text-muted mb-2">
+                              Bitcoin LND Wallet
+                            </p>
                             <h5 className="mb-0">
                               1.02356 BTC{" "}
                               <span className="font-size-14 text-muted">
@@ -84,10 +86,10 @@ const CryptoWallet = props => {
                       <CardBody>
                         <Media>
                           <div className="me-3 align-self-center">
-                            <i className="mdi mdi-ethereum h2 text-primary mb-0" />
+                            <i className="mdi mdi-kzt h2 text-primary mb-0" />
                           </div>
                           <Media body>
-                            <p className="text-muted mb-2">Ethereum Wallet</p>
+                            <p className="text-muted mb-2">USDT Wallet</p>
                             <h5 className="mb-0">
                               0.04121 ETH{" "}
                               <span className="font-size-14 text-muted">
@@ -104,10 +106,10 @@ const CryptoWallet = props => {
                       <CardBody>
                         <Media>
                           <div className="me-3 align-self-center">
-                            <i className="mdi mdi-litecoin h2 text-info mb-0" />
+                            <i className="mdi mdi-bdt h2 text-info mb-0" />
                           </div>
                           <Media body>
-                            <p className="text-muted mb-2">litecoin Wallet</p>
+                            <p className="text-muted mb-2">TORO Wallet</p>
                             <h5 className="mb-0">
                               0.00356 BTC{" "}
                               <span className="font-size-14 text-muted">

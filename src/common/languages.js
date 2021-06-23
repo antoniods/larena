@@ -3,6 +3,7 @@ import spain from "../assets/images/flags/spain.jpg"
 import germany from "../assets/images/flags/germany.jpg"
 import italy from "../assets/images/flags/italy.jpg"
 import russia from "../assets/images/flags/russia.jpg"
+import frFlag from "../assets/images/flags/french.jpg"
 
 const languages = {
   sp: {
@@ -24,6 +25,10 @@ const languages = {
   en: {
     label: "English",
     flag: usFlag,
+  },
+  fr: {
+    label: "France",
+    flag: frFlag,
   },
 }
 
