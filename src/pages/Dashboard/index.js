@@ -86,7 +86,7 @@ const CryptoWallet = props => {
                       <CardBody>
                         <Media>
                           <div className="me-3 align-self-center">
-                            <i className="mdi mdi-kzt h2 text-primary mb-0" />
+                            <i className="mdi mdi-currency-kzt h2 text-success mb-0" />
                           </div>
                           <Media body>
                             <p className="text-muted mb-2">USDT Wallet</p>
@@ -106,7 +106,7 @@ const CryptoWallet = props => {
                       <CardBody>
                         <Media>
                           <div className="me-3 align-self-center">
-                            <i className="mdi mdi-bdt h2 text-info mb-0" />
+                            <i className="mdi mdi-currency-bdt h2 text-danger mb-0" />
                           </div>
                           <Media body>
                             <p className="text-muted mb-2">TORO Wallet</p>

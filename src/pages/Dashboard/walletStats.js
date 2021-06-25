@@ -31,7 +31,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
             </div>
           </Media>
 
-          <Dropdown isOpen={isMenu} toggle={toggleMenu} className="ms-2">
+          {/* <Dropdown isOpen={isMenu} toggle={toggleMenu} className="ms-2">
             <DropdownToggle tag="i" className="text-muted">
               <i className="mdi mdi-dots-horizontal font-size-18" />
             </DropdownToggle>
@@ -40,7 +40,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
               <DropdownItem href="#">Another action</DropdownItem>
               <DropdownItem href="#">Something else</DropdownItem>
             </DropdownMenu>
-          </Dropdown>
+          </Dropdown> */}
         </Media>
       </CardBody>
       <CardBody className="border-top">
@@ -79,7 +79,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
                 <h5>{wallet.send}</h5>
 
                 <div className="mt-3">
-                  <Link to="#" className="btn btn-primary btn-sm w-md">
+                  <Link to="/exchange" className="btn btn-primary btn-sm w-md">
                     Send
                   </Link>
                 </div>
@@ -95,7 +95,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
                 <h5>{wallet.receive}</h5>
 
                 <div className="mt-3">
-                  <Link to="#" className="btn btn-primary btn-sm w-md">
+                  <Link to="/exchange" className="btn btn-primary btn-sm w-md">
                     Receive
                   </Link>
                 </div>
@@ -111,7 +111,7 @@ const WalletStats = ({ wallet, isMenu, toggleMenu }) => {
                 <h5>{wallet.withdraw}</h5>
 
                 <div className="mt-3">
-                  <Link to="#" className="btn btn-primary btn-sm w-md">
+                  <Link to="/exchange" className="btn btn-primary btn-sm w-md">
                     Withdraw
                   </Link>
                 </div>

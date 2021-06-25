@@ -191,7 +191,7 @@ class CryptoExchange extends Component {
       <React.Fragment>
         <div className="page-content">
           <MetaTags>
-            <title>Exchange | Skote - React Admin & Dashboard Template</title>
+            <title>Exchange | Arena</title>
           </MetaTags>
           <Container fluid>
             {/* Render Breadcrumb */}
@@ -271,61 +271,7 @@ class CryptoExchange extends Component {
             </Row>
 
             <Row>
-              <Col xl="8">
-                <Card>
-                  <CardBody>
-                    <h4 className="card-title mb-4">Price</h4>
-
-                    <Row>
-                      <Col xl="3" sm="4">
-                        <Media>
-                          <div className="avatar-sm me-3">
-                            <span className="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-22">
-                              <i className="mdi mdi-bitcoin" />
-                            </span>
-                          </div>
-
-                          <Media body>
-                            <p className="text-muted mb-2">Bitcoin</p>
-                            <h5>1.02356 BTC</h5>
-                          </Media>
-                        </Media>
-                      </Col>
-
-                      <Col xl="3" sm="4">
-                        <div className="mt-4 mt-sm-0">
-                          <p className="text-muted mb-2">In USD</p>
-                          <h5>6310.22 USD</h5>
-                        </div>
-                      </Col>
-
-                      <Col xl="3" sm="4">
-                        <div className="mt-4 mt-sm-0">
-                          <p className="text-muted mb-2">Last 24 hrs</p>
-                          <h5>
-                            0.24 %{" "}
-                            <i className="mdi mdi-arrow-up text-success" />
-                          </h5>
-                        </div>
-                      </Col>
-                    </Row>
-
-                    <div className="mt-4">
-                      <div id="candlestick-chart" dir="ltr">
-                        <ReactApexChart
-                          series={this.state.series}
-                          options={this.state.options}
-                          type="candlestick"
-                          height={310}
-                          className="apex-charts"
-                        />
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-
-              <Col xl="4">
+              <Col xl="5">
                 <Card>
                   <CardBody>
                     <h4 className="card-title mb-4">Buy / Sell</h4>
@@ -550,10 +496,8 @@ class CryptoExchange extends Component {
                   </CardBody>
                 </Card>
               </Col>
-            </Row>
 
-            <Row>
-              <Col xl="6">
+              <Col xl="7">
                 <Card>
                   <CardBody>
                     <h4 className="card-title mb-4">Order book</h4>
@@ -615,39 +559,74 @@ class CryptoExchange extends Component {
                             <td>0.0403</td>
                             <td>250.59</td>
                           </tr>
+                          <tr>
+                            <td>0.0246</td>
+                            <td>0.0246</td>
+                            <td>152.96</td>
+                            <td>0.0403</td>
+                            <td>0.0403</td>
+                            <td>250.59</td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
                   </CardBody>
                 </Card>
               </Col>
-              <Col xl="6">
+            </Row>
+
+            {/* chart by tradingview */}
+            <Row>
+              <Col xl="12">
                 <Card>
                   <CardBody>
-                    <h4 className="card-title mb-4">Notifications</h4>
+                    <h4 className="card-title mb-4">Price</h4>
 
-                    <SimpleBar style={{ maxHeight: "310px" }}>
-                      <ul className="verti-timeline list-unstyled">
-                        {this.state.notofications.map((notification, key) => (
-                          <li key={key} className="event-list">
-                            <div className="event-timeline-dot">
-                              <i className="bx bx-right-arrow-circle font-size-18" />
-                            </div>
-                            <div className="media">
-                              <div className="me-3">
-                                <h5 className="font-size-14">
-                                  {notification.date}{" "}
-                                  <i className="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2" />
-                                </h5>
-                              </div>
-                              <div className="media-body">
-                                <div>{notification.desc}</div>
-                              </div>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
-                    </SimpleBar>
+                    <Row>
+                      <Col xl="3" sm="4">
+                        <Media>
+                          <div className="avatar-sm me-3">
+                            <span className="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-22">
+                              <i className="mdi mdi-bitcoin" />
+                            </span>
+                          </div>
+
+                          <Media body>
+                            <p className="text-muted mb-2">Bitcoin</p>
+                            <h5>1.02356 BTC</h5>
+                          </Media>
+                        </Media>
+                      </Col>
+
+                      <Col xl="3" sm="4">
+                        <div className="mt-4 mt-sm-0">
+                          <p className="text-muted mb-2">In USD</p>
+                          <h5>6310.22 USD</h5>
+                        </div>
+                      </Col>
+
+                      <Col xl="3" sm="4">
+                        <div className="mt-4 mt-sm-0">
+                          <p className="text-muted mb-2">Last 24 hrs</p>
+                          <h5>
+                            0.24 %{" "}
+                            <i className="mdi mdi-arrow-up text-success" />
+                          </h5>
+                        </div>
+                      </Col>
+                    </Row>
+
+                    <div className="mt-4">
+                      <div id="candlestick-chart" dir="ltr">
+                        <ReactApexChart
+                          series={this.state.series}
+                          options={this.state.options}
+                          type="candlestick"
+                          height={310}
+                          className="apex-charts"
+                        />
+                      </div>
+                    </div>
                   </CardBody>
                 </Card>
               </Col>

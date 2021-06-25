@@ -123,7 +123,7 @@ const Navbar = props => {
 
                 {/* ORDERS */}
 
-                <li className="nav-item dropdown">
+                {/* <li className="nav-item dropdown">
                   <Link
                     to="/orders"
                     className="nav-link dropdown-togglez arrow-none"
@@ -131,7 +131,7 @@ const Navbar = props => {
                     <i className="bx bx-customize me-2"></i>
                     {props.t("Orders")}
                   </Link>
-                </li>
+                </li> */}
 
                 {/* PRIMO MENU */}
 

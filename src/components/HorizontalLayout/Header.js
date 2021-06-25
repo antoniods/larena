@@ -85,19 +85,19 @@ const Header = props => {
             <div className="navbar-brand-box">
               <Link to="/" className="logo logo-dark">
                 <span className="logo-sm">
-                  <img src={logo} alt="" height="22" />
+                  <img src={logo} alt="" height="25" />
                 </span>
                 <span className="logo-lg">
-                  <img src={logoDark} alt="" height="17" />
+                  <img src={logoDark} alt="" height="25" />
                 </span>
               </Link>
 
               <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logoLightSvg} alt="" height="20" />
+                  <img src={logoLightSvg} alt="" height="25" />
                 </span>
                 <span className="logo-lg">
-                  <img src={logoLight} alt="" height="35" />
+                  <img src={logoLight} alt="" height="25" />
                 </span>
               </Link>
             </div>
@@ -309,7 +309,7 @@ const Header = props => {
 
             <LanguageDropdown />
 
-            <Dropdown
+            {/* <Dropdown
               className="d-none d-lg-inline-block ms-1"
               isOpen={socialDrp}
               toggle={() => {
@@ -367,7 +367,7 @@ const Header = props => {
                   </Row>
                 </div>
               </DropdownMenu>
-            </Dropdown>
+            </Dropdown> */}
 
             <div className="dropdown d-none d-lg-inline-block ms-1">
               <button
